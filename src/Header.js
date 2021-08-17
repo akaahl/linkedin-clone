@@ -1,20 +1,23 @@
 import "./Header.css";
+import SearchIcon from "@material-ui/icons/Search";
 
 const Header = () => {
   return (
     <div className="header">
-      <h2>This is a header</h2>
-
       <div className="header__left">
-        <img src="" alt="" />
+        <img
+          src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"
+          alt="linkedin"
+        />
 
         <div className="header__search">
+          <SearchIcon />
           <input type="text" />
         </div>
       </div>
 
       <div className="header__right">
-        <p>Right</p>
+        
       </div>
     </div>
   );
