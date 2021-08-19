@@ -2,6 +2,14 @@ import React from "react";
 import "./Login.css";
 
 function Login() {
+  const register = () => {
+    console.log("register");
+  };
+
+  const loginToApp = () => {
+    console.log("login");
+  };
+
   return (
     <div className="login">
       <img
@@ -14,7 +22,17 @@ function Login() {
         <input type="text" placeholder="Profile Photo URL (optional)" />
         <input type="text" placeholder="Email" />
         <input type="password" placeholder="Password" />
+        <button type="submit" onClick={loginToApp}>
+          Sign In
+        </button>
       </form>
+
+      <p>
+        Not a member?{" "}
+        <span className="login__register" onClick={register}>
+          Register now
+        </span>
+      </p>
     </div>
   );
 }
