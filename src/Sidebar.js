@@ -18,7 +18,7 @@ function Sidebar() {
         />
         <Avatar
           className="sidebar__avatar"
-          src={user.photoURL || user.email[0]}
+          src={user.photoUrl || user.email[0]}
         />
 
         <h2>{user.displayName}</h2>
