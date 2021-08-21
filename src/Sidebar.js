@@ -40,8 +40,8 @@ function Sidebar() {
       <div className="sidebar__bottom">
         <p>Recent</p>
         {recentItem &&
-          recentItem.map((item) => (
-            <div className="sidebar__recentItem">
+          recentItem.map((item, id) => (
+            <div className="sidebar__recentItem" key={id}>
               <span className="sidebar__hash">#</span>
               <p>{item}</p>
             </div>
